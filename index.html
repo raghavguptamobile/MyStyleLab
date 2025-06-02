@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyStyleLab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at 60% 40%, #18181b 60%, #000 100%);
+      color: #fff;
+      min-height: 100vh;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 4rem 1rem 4rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #60a5fa;
+      letter-spacing: 1px;
+    }
+    .logo-icon {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #d1d5db;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #60a5fa;
+    }
+    .btn {
+      padding: 0.6rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-signin {
+      background: transparent;
+      color: #60a5fa;
+      border: 1px solid #60a5fa;
+      margin-right: 1rem;
+    }
+    .btn-signin:hover {
+      background: #60a5fa;
+      color: #18181b;
+    }
+    .btn-getstarted {
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      color: #fff;
+      border: none;
+    }
+    .btn-getstarted:hover {
+      opacity: 0.9;
+    }
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 6rem 0 6rem;
+    }
+    .left {
+      max-width: 40vw;
+    }
+    .badge {
+      display: inline-block;
+      background: #18181b;
+      color: #60a5fa;
+      border-radius: 999px;
+      padding: 0.3rem 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      border: 1px solid #27272a;
+    }
+    .headline {
+      font-size: 3.5rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+    }
+    .subheadline {
+      color: #d1d5db;
+      font-size: 1.25rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .btn-lab {
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      color: #fff;
+      border: none;
+    }
+    .btn-demo {
+      background: transparent;
+      color: #60a5fa;
+      border: 1px solid #60a5fa;
+    }
+    .btn-demo:hover {
+      background: #60a5fa;
+      color: #18181b;
+    }
+    .illustration-container {
+      position: relative;
+      min-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .fit-badge {
+      position: absolute;
+      bottom: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #22c55e;
+      color: #fff;
+      border-radius: 1rem;
+      padding: 0.7rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 2px 12px 0 #22c55e44;
+    }
+    @media (max-width: 900px) {
+      .main-content {
+        flex-direction: column;
+        padding: 2rem 1rem;
+      }
+      .left {
+        max-width: 100vw;
+        margin-bottom: 3rem;
+      }
+      .illustration-container {
+        min-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <svg class="logo-icon" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="#60a5fa" stroke-width="2"/><path d="M16 8v8l6 3" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/></svg>
+      MyStyleLab
+    </div>
+    <div class="nav-links">
+      <a href="#">Features</a>
+      <a href="#">How It Works</a>
+      <a href="#">Pricing</a>
+      <button class="btn btn-signin">Sign In</button>
+      <button class="btn btn-getstarted">Get Started</button>
+    </div>
+  </nav>
+  <main class="main-content">
+    <div class="left">
+      <div class="badge">★ AI-Powered Fashion Revolution</div>
+      <div class="headline">The Future of Fashion</div>
+      <div class="subheadline">
+        Upload reference images, describe your style, and let our advanced AI create personalized fashion recommendations. Experience virtual try-on with our realistic AI models.
+      </div>
+      <div class="cta-buttons">
+        <button class="btn btn-lab">Enter The Lab</button>
+        <button class="btn btn-demo">👁️ View Demo</button>
+      </div>
+    </div>
+    <div class="illustration-container">
+      <!-- SVG Placeholder for Illustration -->
+      <svg width="180" height="320" viewBox="0 0 180 320" fill="none">
+        <rect x="60" y="60" width="60" height="100" rx="20" fill="#3b82f6"/>
+        <circle cx="90" cy="40" r="30" fill="#27272a"/>
+        <rect x="40" y="160" width="20" height="70" rx="10" fill="#27272a"/>
+        <rect x="120" y="160" width="20" height="70" rx="10" fill="#27272a"/>
+        <rect x="70" y="110" width="40" height="60" rx="10" fill="#18181b"/>
+        <rect x="80" y="120" width="20" height="30" rx="5" fill="#22d3ee"/>
+        <rect x="80" y="155" width="20" height="10" rx="3" fill="#22c55e"/>
+        <circle cx="140" cy="30" r="8" fill="#facc15"/>
+        <circle cx="150" cy="50" r="6" fill="#22c55e"/>
+        <circle cx="158" cy="54" r="4" fill="#22c55e"/>
+      </svg>
+      <div class="fit-badge">
+        <span>Perfect fit confirmed!</span> <span>😊</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
